@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sidebar{
+            width: 250px;
+            height: 90vh;
+            background-color: #313037;
+            color: #fff;
+        }
+        .sidebar_title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px 20px;
+        
+        }
+        .sidebar_title h1{
+            font-weight: 100;
+        }
+        .sidebar_title i{
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .sidebar_view{
+            width: 100%;
+            height: 50px;
+            background-color: #25232a;
+            display: flex;
+            align-items: center;
+            color: #9af3bc;
+        
+        }
+        .sidebar_view p i{
+            margin-left: 30px;
+            margin-right: 10px;
+        }
+        .sidebar_view p{
+            flex: 1;
+        }
+        .sidebar_view i{
+            margin-right: 30px;
+        }
+        .sidebar_collection{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .collection_item{
+            width: 100px;
+            height: 80px;
+            background-color: #25232a;
+            margin: 10px 12px;
+            border-radius: 5px;
+            display: grid;
+            place-items: center;
+        }
+        .collection_item i{
+            font-size: 25px;
+            color: #5330be;
+            cursor: pointer;
+        }
+        select{
+            width: 90%;
+            margin-left: 5%;
+            padding: 5px 0px;
+            outline: none;
+            background-color: transparent;
+            color: #fff;
+        }
+        option{
+            background-color: black;    
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+     <div class="sidebar_title">
+        <h1>Format</h1>
+        <i class="fas fa-bars"></i>
+     </div>
+   <div class="sidebar_view">
+      <p><i class="fas fa-eye"></i>View live site</p> <i class="fas fa-chevron-right"></i>
+      
+   </div>
+   <div class="sidebar_collection">
+       <div class="collection_item">
+           <i class="fas fa-qrcode"></i>
+           <p>Dashboard</p>
+       </div>
+       <div class="collection_item">
+         <i class="fas fa-list"></i>
+         <p>Site Menu</p>
+       </div>
+       <div class="collection_item">
+        <i class="fas fa-shapes"></i>
+         <p>Design</p>
+    </div>
+       <div class="collection_item">
+         <i class="fas fa-file-alt"></i>
+         <p>Pages</p>
+       </div>
+    </div>
+    <select>
+        <option value="">Role</option>
+        <option value="">Role2</option>
+        <option value="">Role3</option>
+    </select>
+    </div>
+</body>
+</html>
